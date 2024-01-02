@@ -1,0 +1,61 @@
+@import url(https://db.onlinewebfonts.com/c/34654c64151f22ffb694abbf7569f68e?family=Graphik+LC+Web+Regular+Regular);
+@import url(https://db.onlinewebfonts.com/c/042fdc0ad9bf83440df6afe1bbadf684?family=Graphik+LC+Web+Bold+Regular);
+@import url(https://db.onlinewebfonts.com/c/e81d1bf7827206c7d1273046adace7f2?family=Graphik+LC+Web+Medium);
+
+* {
+  font-family: "Graphik LC Web Medium";
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+:root {
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  --dark-color: #6C6C70;
+  --bright-color: #D7A830;
+}
+
+
+/* Global classes  */
+
+.bright-color {
+  color: var(--bright-color);
+}
+
+.dark-color {
+  color: var(--dark-color);
+}
+
+.font-thin {
+  font-family: "Graphik LC Web Regular Regular";
+}
+
+.font-mid {
+  font-family: "Graphik LC Web Medium";
+}
+
+.font-bold {
+  font-family: "Graphik LC Web Bold Regular";
+}
+
+@media screen and (max-width: 834px) {
+  .tablet-unnecessary {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .mobile-unnecessary {
+    display: none;
+  }
+}

@@ -1,0 +1,27 @@
+.main {
+  min-height: 200vh;
+  margin-top: 54px;
+}
+
+@keyframes load-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.main__banner_advert {
+  position: fixed;
+  bottom: 34px;
+  right: 34px;
+  animation: 1s load-animation;
+}
+
+@media screen and (max-width: 425px) {
+  .main__banner_advert {
+    bottom: 0;
+    right: 0;
+  }
+}

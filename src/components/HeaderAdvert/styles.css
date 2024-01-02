@@ -1,0 +1,101 @@
+.header-advert__section {
+  background: #101010;
+  color: white;
+  height: 54px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-advert__section div {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.header-advert__shine {
+  width: 1408px;
+  height: 1408px;
+  position: absolute;
+  background: radial-gradient(50% 50% at 50% 50%, #FAE571 0%, rgba(11, 14, 23, 0.00) 100%);
+  filter: blur(92px);
+  top: -1270px;
+  right: -440px;
+}
+
+.header-advert__icon {
+  width: 212px;
+  overflow: hidden;
+  position: relative;
+}
+
+.header-advert__icon img {
+  width: 600px;
+  position: absolute;
+  top: -84px;
+  right: -330px;
+}
+
+.header-advert__content {
+  gap: 12px;
+}
+
+.header-advert__divider {
+  width: 3px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 100%;
+}
+
+.header-advert__content p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.header-advert__buttons {
+  gap: 14px;
+  margin-right: 24px;
+}
+
+.header-advert__shop {
+  background: white;
+  padding: 11px 19px;
+  border-radius: 100px;
+  border: none;
+  white-space: nowrap;
+}
+
+.header-advert__shop span {
+  font-size: 16px;
+  background: -webkit-linear-gradient(0, #969696, #000000 40%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-advert__close {
+  background: none;
+  padding: 0;
+}
+
+.header-advert__next {
+  display: none;
+  background: none;
+  padding: 0;
+}
+
+@media screen and (max-width: 425px) {
+  .header-advert__content {
+    gap: 4px;
+  }
+
+  .header-advert__content :first-child::after {
+    content: ',';
+  }
+
+  .header-advert__next {
+    display: block;
+  }
+}
